@@ -32,7 +32,6 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // TODO: Add your Stripe publishable key here
   Stripe.publishableKey =
       'pk_test_51L7cFkBAloH97gpnJnFBulAdxQ5IcE3C2LXUAVAQSe9c0iFh96N3EwndUU4Qdh7D2i20NnlMxevzWYN2iasrRcwJ00Ipz5b6sL';
   await Stripe.instance.applySettings();

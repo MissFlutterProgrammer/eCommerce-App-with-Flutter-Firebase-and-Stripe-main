@@ -1,3 +1,5 @@
+// ignore_for_file: empty_catches
+
 import 'package:db_client/db_client.dart';
 
 import '../models/product.dart';

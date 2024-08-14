@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:ecommerce_with_flutter_firebase_and_stripe/main.dart';
 import 'package:ecommerce_with_flutter_firebase_and_stripe/models/category.dart';
 import 'package:flutter/material.dart';

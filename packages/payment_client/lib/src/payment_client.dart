@@ -1,8 +1,8 @@
-import 'dart:convert';
+// ignore_for_file: constant_identifier_names
 
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-// TODO: Add your Cloud Functions URLs here
 const ENDPOINT_METHOD_ID_URL =
     "https://stripe-pay-endpoint-method-id-yln66foica-uc.a.run.app";
 

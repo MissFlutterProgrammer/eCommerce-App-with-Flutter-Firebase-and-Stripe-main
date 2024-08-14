@@ -1,8 +1,8 @@
-import 'dart:typed_data';
+// ignore_for_file: avoid_print
 
+import 'dart:typed_data';
 import 'package:http/http.dart' as http;
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloud_firestore_platform_interface/cloud_firestore_platform_interface.dart';
 import 'package:db_client/src/db_record.dart';
 
 class DbClient {

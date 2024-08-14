@@ -1,6 +1,7 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-
 import '../main.dart';
 
 class CheckoutScreen extends StatefulWidget {
@@ -21,11 +22,14 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: Text('Checkout', style: textTheme.headlineSmall),
+        title: Text(
+          'Checkout',
+          style: textTheme.headlineSmall,
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
               Text(
@@ -49,7 +53,11 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            Expanded(child: Text('Total: \$${cart.totalPrice}')),
+            Expanded(
+              child: Text(
+                'Total: \$${cart.totalPrice}',
+              ),
+            ),
             const SizedBox(width: 16.0),
             Expanded(
               child: FilledButton(

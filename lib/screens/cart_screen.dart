@@ -1,6 +1,4 @@
-import 'package:ecommerce_with_flutter_firebase_and_stripe/models/cart_item.dart';
 import 'package:flutter/material.dart';
-
 import '../main.dart';
 import '../widgets/cart_item_card.dart';
 
@@ -19,7 +17,10 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: Text('Cart', style: textTheme.headlineSmall),
+        title: Text(
+          'Cart',
+          style: textTheme.headlineSmall,
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -50,7 +51,11 @@ class _CartScreenState extends State<CartScreen> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            Expanded(child: Text('Total: \$${cart.totalPrice}')),
+            Expanded(
+              child: Text(
+                'Total: \$${cart.totalPrice}',
+              ),
+            ),
             const SizedBox(width: 16.0),
             Expanded(
               child: FilledButton(

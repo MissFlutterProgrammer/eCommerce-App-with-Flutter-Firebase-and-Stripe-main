@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-
 import '../main.dart';
 import '../models/cart_item.dart';
 
 class CartItemCard extends StatelessWidget {
-  const CartItemCard({super.key, required this.cartItem});
+  const CartItemCard({
+    super.key,
+    required this.cartItem,
+  });
 
   final CartItem cartItem;
 
@@ -41,7 +43,9 @@ class CartItemCard extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('\$${(cartItem.subtotal).toStringAsFixed(2)}'),
+                      Text(
+                        '\$${(cartItem.subtotal).toStringAsFixed(2)}',
+                      ),
                       Row(
                         children: [
                           IconButton(

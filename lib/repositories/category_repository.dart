@@ -1,5 +1,4 @@
 import 'package:db_client/db_client.dart';
-
 import '../models/category.dart';
 
 class CategoryRepository {
@@ -12,7 +11,6 @@ class CategoryRepository {
       // final categoriesData = await dbClient.fetchAll(collection: 'categories');
       final categoriesData = await dbClient.fetchAllFromBundle(
         collection: 'categories',
-        // TODO: Add your bundle URL here
         bundleUrl:
             'https://us-central1-atomsbox-ecomm-27d08.cloudfunctions.net/ext-firestore-bundle-builder-serve',
       );

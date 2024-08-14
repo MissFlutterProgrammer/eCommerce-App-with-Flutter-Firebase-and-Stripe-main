@@ -1,5 +1,4 @@
 import 'package:uuid/uuid.dart';
-
 import '../main.dart';
 import '../models/cart_item.dart';
 import '../models/product.dart';
@@ -20,7 +19,9 @@ class CartRepository {
         cartItems: List.from(cart.cartItems)
           ..remove(existingCartItem)
           ..add(
-            existingCartItem.copyWith(quantity: initialQuantity + quantity),
+            existingCartItem.copyWith(
+              quantity: initialQuantity + quantity,
+            ),
           ),
       );
     } else {
@@ -29,7 +30,10 @@ class CartRepository {
         cartItems: List.from(cart.cartItems)
           ..add(
             CartItem(
-                id: const Uuid().v4(), product: product, quantity: quantity),
+              id: const Uuid().v4(),
+              product: product,
+              quantity: quantity,
+            ),
           ),
       );
     }
