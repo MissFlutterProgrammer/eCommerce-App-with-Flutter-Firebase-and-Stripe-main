@@ -52,7 +52,9 @@ class CartItemCard extends StatelessWidget {
                             visualDensity: VisualDensity.compact,
                             onPressed: () {
                               cartRepository.addProductToCart(
-                                  cartItem.product, 1);
+                                cartItem.product,
+                                1,
+                              );
                             },
                             icon: const Icon(Icons.add),
                           ),
