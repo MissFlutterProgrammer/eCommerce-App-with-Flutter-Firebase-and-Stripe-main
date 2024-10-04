@@ -1,3 +1,3 @@
-library payment_client;
+library;
 
 export 'src/payment_client.dart';

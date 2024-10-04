@@ -1,29 +1,29 @@
 name: db_client
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+# homepage:
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-  cloud_firestore: ^4.13.6
+  cloud_firestore: ^5.4.4
   flutter:
     sdk: flutter
-  http: ^1.1.0
+  http: ^1.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+ uses-material-design: true
   # To add assets to your package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
